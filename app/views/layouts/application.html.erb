@@ -11,6 +11,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <% flash.each do |name, msg| %>
+        <div class="flash-message <%= name %>">
+          <%= msg %>
+          <button class="close-button" onclick="this.parentElement.style.display='none'">×</button>
+        </div>
+      <% end %>
+      
+      <%= yield %>
+    </div>
   </body>
 </html>
