@@ -1,0 +1,9 @@
+<h1>Delete Book</h1>
+
+<p>Are you sure you want to delete the book "<%= @book.title %>"?</p>
+<p>This action cannot be undone.</p>
+
+<div>
+  <%= button_to 'Delete Book', book_path(@book), method: :delete %> |
+  <%= link_to 'Back to Books', books_path %>
+</div>
