@@ -31,7 +31,6 @@ jobs:
                   gem install bundler
                   bundler install
             - name: Create database
-            - name: Setup test database
               run: |
                   export DISABLE_SPRING=true
                   bundler exec rails db:create RAILS_ENV=test

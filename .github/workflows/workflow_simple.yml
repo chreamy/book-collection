@@ -34,7 +34,7 @@ jobs:
               run: |
                   export DISABLE_SPRING=true
                   bundler exec rails db:create RAILS_ENV=test
-                  bundler exec rails db:migrate RAILS_ENV=test
+                  bundler exec rails db:schema:load RAILS_ENV=test
             - uses: borales/actions-yarn@v3.0.0
               with:
                   cmd: install
