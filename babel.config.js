@@ -41,19 +41,18 @@ module.exports = function (api) {
             "@babel/plugin-syntax-dynamic-import",
             isTestEnv && "babel-plugin-dynamic-import-node",
             "@babel/plugin-transform-destructuring",
-
+            ["@babel/plugin-proposal-class-properties", { loose: true }],
             [
-                "@babel/plugin-transform-runtime",
-                {
-                    helpers: false,
-                },
+                "@babel/plugin-proposal-object-rest-spread",
+                { useBuiltIns: true },
             ],
+            ["@babel/plugin-transform-private-methods", { loose: true }],
             [
-                "@babel/plugin-transform-regenerator",
-                {
-                    async: false,
-                },
+                "@babel/plugin-transform-private-property-in-object",
+                { loose: true },
             ],
+            ["@babel/plugin-transform-runtime", { helpers: false }],
+            ["@babel/plugin-transform-regenerator", { async: false }],
         ].filter(Boolean),
     };
 };
