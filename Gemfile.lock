@@ -67,7 +67,8 @@ GEM
     bindex (0.8.1)
     bootsnap (1.18.6)
       msgpack (~> 1.2)
-    breakman (1.0.0)
+    brakeman (7.1.0)
+      racc
     builder (3.3.0)
     byebug (11.1.3)
     capybara (3.40.0)
@@ -288,7 +289,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
-  breakman
+  brakeman
   byebug
   capybara (>= 3.26)
   concurrent-ruby (= 1.3.4)
@@ -314,7 +315,7 @@ DEPENDENCIES
   yaml_db
 
 RUBY VERSION
-   ruby 3.0.2p107
+   ruby 3.1.2p20
 
 BUNDLED WITH
    2.2.28
