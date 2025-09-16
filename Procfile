@@ -1,2 +1,2 @@
 release: rails db:migrate
-test: rails db:test:prepare
+test: RAILS_ENV=test rails db:schema:load && rails db:migrate
