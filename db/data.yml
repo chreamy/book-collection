@@ -1,0 +1,53 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - 2025-09-05 19:42:42.513117000 Z
+    - 2025-09-05 19:42:42.513117000 Z
+
+---
+books:
+  columns:
+  - id
+  - title
+  - created_at
+  - updated_at
+  - author
+  - price
+  - published_date
+  records: 
+  - - 1
+    - Hellos
+    - 2025-09-09 01:00:17.857174000 Z
+    - 2025-09-09 01:00:49.892634000 Z
+    - 
+    - 
+    - 
+  - - 2
+    - book 1
+    - 2025-09-09 01:04:46.531781000 Z
+    - 2025-09-09 01:04:46.531781000 Z
+    - 
+    - 
+    - 
+  - - 3
+    - book 2
+    - 2025-09-09 01:04:54.836741000 Z
+    - 2025-09-09 01:04:54.836741000 Z
+    - 
+    - 
+    - 
+  - - 5
+    - birthday
+    - 2025-09-09 22:52:22.955722000 Z
+    - 2025-09-09 22:52:22.955722000 Z
+    - christopher liu
+    - !ruby/object:BigDecimal 18:0.1234e4
+    - '2003-09-02'
