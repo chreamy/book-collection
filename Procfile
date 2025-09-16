@@ -1,3 +1,2 @@
 release: rails db:migrate
-test: RAILS_ENV=test rails db:schema:load && rails db:migrate
-review: RAILS_ENV=test rails db:schema:load && rails db:migrate
+test: env DISABLE_SPRING true bundle exec rails db:drop db:create db:schema:load RAILS_ENV=test
