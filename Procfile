@@ -1,1 +1,2 @@
-release: rails db:drop db:create db:migrate RAILS_ENV=test
+release: rails db:migrate
+test: rails db:test:prepare
