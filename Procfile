@@ -1,1 +1,1 @@
-release: RAILS_ENV=test rails db:schema:load
+release: RAILS_ENV=test rails db:schema:load && rails db:seed
